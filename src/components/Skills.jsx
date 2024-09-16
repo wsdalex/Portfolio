@@ -17,7 +17,7 @@ import {
 const Skills = () => {
   return (
     <>
-      <Container className="mt-5">
+      <Container className="mt-5" id="skills">
         <h1>Skills</h1>
         <Row>
           <Col md={6}>

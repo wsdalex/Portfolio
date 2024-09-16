@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <>
       <Fade in={true}>
-        <Container className="mt-5">
+        <Container className="mt-5" id="about-me">
           <Row>
             <Col md={4}>
               <Image
