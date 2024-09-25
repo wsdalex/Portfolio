@@ -28,7 +28,7 @@ const Projects = () => {
           <h1>Projects</h1>
           <Row md={4}>
             <Col md={4}>
-              <Card>
+              <Card className="shadow-lg">
                 <Card.Body>
                   <Card.Title>Makers 64</Card.Title>
                   <Image src={"/Makers64.png"} fluid className="border"></Image>
@@ -73,7 +73,7 @@ const Projects = () => {
               </Card>
             </Col>
             <Col md={4}>
-              <Card>
+              <Card className="shadow-lg">
                 <Card.Body>
                   <Card.Title>Acebook</Card.Title>
                   <Image src={"/Acebook.png"} fluid className="border"></Image>
@@ -112,7 +112,7 @@ const Projects = () => {
               </Card>
             </Col>
             <Col md={4}>
-              <Card>
+              <Card className="shadow-lg">
                 <Card.Body>
                   <Card.Title>Makers BnB</Card.Title>
                   <Image

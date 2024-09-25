@@ -1,35 +1,31 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-$background-color: #fef6e4; // Light cream/peach background
-$primary-color: #f76c5e; // Burnt orange (buttons, accents)
-$secondary-color: #f2994a; // Warm muted yellow
-$text-color: #2d2d2a; // Dark neutral for readability
-$button-hover-color: #d1495b; // Darker terracotta for hover effect
+$background-color: #fef6e4;
+$primary-color: #f76c5e;
+$secondary-color: #f2994a;
+$text-color: #2d2d2a;
+$button-hover-color: #d1495b;
+$soft-primary-color: #f89c83;
 
-// Global styles
 body {
   background-color: $background-color;
   font-family: "Assistant", sans-serif;
   color: $text-color;
 }
-// Softer color variables
-$soft-primary-color: #f89c83; // Softer version of burnt orange
 
-// Custom navbar styling
 .custom-navbar {
-  background-color: $soft-primary-color; // Softer burnt orange background
+  background-color: $soft-primary-color;
   .navbar-brand,
   .nav-link {
-    color: $text-color; // Dark neutral text color for contrast
+    color: $text-color;
   }
 
   .nav-link {
     &:hover {
-      color: #c44d37; // Change to secondary color on hover
+      color: #c44d37;
     }
   }
 }
 
-// Button styles
 .btn-primary {
   background-color: $primary-color;
   border-color: $primary-color;
@@ -39,7 +35,6 @@ $soft-primary-color: #f89c83; // Softer version of burnt orange
   }
 }
 
-// Links
 a {
   color: $secondary-color;
   &:hover {
@@ -56,13 +51,13 @@ h1 {
   font-weight: 700;
 }
 .full-height {
-  min-height: 100vh; /* Full viewport height */
-  display: flex; /* Center contents vertically if needed */
-  align-items: center; /* Center contents vertically */
-  justify-content: center; /* Center contents horizontally */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 html {
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -71,26 +66,26 @@ h2 {
 
 @keyframes slideInRight {
   0% {
-    transform: translateX(100%); /* Start off-screen to the right */
-    opacity: 0; /* Start invisible */
+    transform: translateX(100%);
+    opacity: 0;
   }
   100% {
-    transform: translateX(0); /* End at the original position */
-    opacity: 1; /* Fully visible */
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 .navbar-animation {
-  animation: slideInRight 0.5s ease forwards; /* Animation duration and easing */
+  animation: slideInRight 0.5s ease forwards;
 }
 
 .skills {
   background-color: $secondary-color;
 }
-// Custom styles for the Accordion component
+
 .accordion-button {
-  background-color: $background-color; // Default background color
-  color: $text-color; // Default text color
+  background-color: $background-color;
+  color: $text-color;
 }
 
 .accordion-button:not(.collapsed) {
@@ -106,8 +101,14 @@ h2 {
 .card-body {
   background-color: $background-color;
 }
-
+.card-title {
+  font-weight: 600;
+}
 .section {
-  padding-top: 80px; // Adjust this value to match your navbar height
-  margin-top: -80px; // Negative margin to pull it up
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+.list-group-item {
+  background-color: $background-color;
 }
