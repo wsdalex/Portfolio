@@ -1,0 +1,113 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+$background-color: #fef6e4; // Light cream/peach background
+$primary-color: #f76c5e; // Burnt orange (buttons, accents)
+$secondary-color: #f2994a; // Warm muted yellow
+$text-color: #2d2d2a; // Dark neutral for readability
+$button-hover-color: #d1495b; // Darker terracotta for hover effect
+
+// Global styles
+body {
+  background-color: $background-color;
+  font-family: "Assistant", sans-serif;
+  color: $text-color;
+}
+// Softer color variables
+$soft-primary-color: #f89c83; // Softer version of burnt orange
+
+// Custom navbar styling
+.custom-navbar {
+  background-color: $soft-primary-color; // Softer burnt orange background
+  .navbar-brand,
+  .nav-link {
+    color: $text-color; // Dark neutral text color for contrast
+  }
+
+  .nav-link {
+    &:hover {
+      color: #c44d37; // Change to secondary color on hover
+    }
+  }
+}
+
+// Button styles
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $button-hover-color;
+    border-color: $button-hover-color;
+  }
+}
+
+// Links
+a {
+  color: $secondary-color;
+  &:hover {
+    color: $button-hover-color;
+  }
+}
+
+.wsdalex {
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-weight: 700;
+}
+.full-height {
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Center contents vertically if needed */
+  align-items: center; /* Center contents vertically */
+  justify-content: center; /* Center contents horizontally */
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+h2 {
+  font-weight: 600;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    transform: translateX(0); /* End at the original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.navbar-animation {
+  animation: slideInRight 0.5s ease forwards; /* Animation duration and easing */
+}
+
+.skills {
+  background-color: $secondary-color;
+}
+// Custom styles for the Accordion component
+.accordion-button {
+  background-color: $background-color; // Default background color
+  color: $text-color; // Default text color
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $soft-primary-color;
+}
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-item {
+  background-color: $background-color;
+}
+
+.card-body {
+  background-color: $background-color;
+}
+
+.section {
+  padding-top: 80px; // Adjust this value to match your navbar height
+  margin-top: -80px; // Negative margin to pull it up
+}

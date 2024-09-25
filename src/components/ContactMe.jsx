@@ -5,8 +5,8 @@ import { Github, Linkedin } from "react-bootstrap-icons";
 const ContactMe = () => {
   return (
     <>
-      <Container className="mt-5">
-        <h1>Contact Me</h1>
+      <Container className="mt-5 section" id="contact-me">
+        <h1 className="text-center">Contact Me</h1>
 
         <Row className="d-flex justify-content-center mt-4">
           <Col md={6} className="text-center">

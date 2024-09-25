@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Fade, Image, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 const imageLink =
   "https://media.licdn.com/dms/image/v2/C4D03AQHCLKga9HLpuw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1594725670496?e=1731542400&v=beta&t=o6z8OSNKt4XscdHMPGWRCo_p7DtcPvfY5m9pHZ20o6g";
 const AboutMe = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShow(true), 500); // Delay for fade-in effect
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      <Fade in={true}>
-        <Container className="mt-5" id="about-me">
+      <Fade in={show}>
+        <Container
+          className="full-height"
+          id="about-me"
+          style={{ paddingTop: "80px" }}
+        >
           <Row>
             <Col md={4}>
               <Image
